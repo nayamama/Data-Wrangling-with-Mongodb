@@ -57,4 +57,3 @@ def parse_file(datafile):
 
 if __name__ == '__main__':
     print parse_file(datafile)
-    
