@@ -45,4 +45,3 @@ def test():
 
 
 test()
-#split_file(PATENTS)
