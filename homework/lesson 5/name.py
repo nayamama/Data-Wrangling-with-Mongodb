@@ -60,4 +60,4 @@ def test():
 if __name__ == "__main__":
     data = process_file(CITIES)
     print data[126]['name']  # <- ['Narwana', 'thumbnail']
-    
+
