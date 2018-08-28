@@ -146,3 +146,13 @@ def test():
 
 if __name__ == "__main__":
     test()
+
+    data = process_file(DATAFILE, FIELDS)
+
+    # write data to a json file
+    with open("collection.json", "w") as f:
+        f.write('[')
+        for doc in data:
+            f.write(json.dumps(doc))
+            f.write(',')
+        f.write(']')
