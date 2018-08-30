@@ -153,6 +153,6 @@ if __name__ == "__main__":
     with open("collection.json", "w") as f:
         f.write('[')
         for doc in data:
-            f.write(json.dumps(doc))
+            f.write(json.dumps(doc, indent=2))  # <- indent makes json more readable
             f.write(',')
         f.write(']')
